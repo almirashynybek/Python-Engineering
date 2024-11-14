@@ -1,9 +1,23 @@
-fruits1 = ["apple", "banana", "pear", "kiwi"]
-fruits2 = ["apple", "banana123", "pear", "kiwi"]
+class Vehicle:
+    def __init__(self, speed):
+        self.speed = speed
+    
+    def move(self):
+        print(f"Vehicle moves with speed {self.speed} km/h ")
 
-all_alpha_1 = all(map(lambda x: x.isalpha(), fruits1))
-all_alpha_2 = all(map(lambda x: x.isalpha(), fruits2))
+    
+class Car(Vehicle):
+    def move(self):
+        print(f"Car moves with speed {self.speed} km/h ")
 
-print(all_alpha_1)
-print(all_alpha_2)
-      
+
+class Bicycle(Vehicle):
+    def move (self):
+        print(f"Bicycle moves with speed {self.speed} km/h ")
+
+
+car = Car(25)   
+bicycle = Bicycle(15)
+
+car.move()
+bicycle.move()
