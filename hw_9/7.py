@@ -1,3 +1,5 @@
+# Задание 2: Сотрудники и различные способы работы
+
 from abc import ABC, abstractmethod
 
 
@@ -22,8 +24,10 @@ class Manager(Employee):
         print("Проводит совещание")
 
 
+
 def work_day(employees):
     return [item.perform_task() for item in employees]
+
 
 
 employees = [Developer(), Designer(), Manager()]
