@@ -6,3 +6,4 @@ all_alpha_2 = all(map(lambda x: x.isalpha(), fruits2))
 
 print(all_alpha_1)
 print(all_alpha_2)
+      
