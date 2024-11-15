@@ -1,8 +1,8 @@
 # Задание 1: Проверка времени суток
 
 class TimeUtils:
-    def __init__(self, hour):
-            self.hour = hour
+    # def __init__(self, hour):
+    #         self.hour = hour
     
     @staticmethod     
     def is_morning(hour):
@@ -11,5 +11,5 @@ class TimeUtils:
         
         return False
     
-time = TimeUtils(15)
+time = TimeUtils()
 print(time.is_morning(12))
