@@ -1,19 +1,21 @@
+# Задание 1: Корзина покупок
+
 class ShoppingCart:
     def __init__(self):
         self.__items = []
 
     def add_item(self, item: str):
-        self.__items.append(item)  # Corrected the typo here
+        self.__items.append(item)  
 
     def __len__(self):
         print("Количество товаров в корзине:", end = '')
-        return len(self.__items)  # Return the length of the list (not a string)
+        return len(self.__items)  
     
     def __getitem__(self, index: int):
         return self.__items[index]
     
-    def __setitem__(self, index: int, value: str):  # Added 'value' argument here
-        self.__items[index] = value  # Set the item at the specified index
+    def __setitem__(self, index: int, value: str):  
+        self.__items[index] = value  
     
     def __str__(self):
         return (
@@ -21,8 +23,8 @@ class ShoppingCart:
             f"{', '.join(self.__items) if self.__items else 'корзина пуста'}"
         )
 
-# Example usage
-cart = ShoppingCart()  # Create an instance of ShoppingCart
+
+cart = ShoppingCart() 
 cart.add_item("Кофе")
 cart.add_item("Книга")
 
