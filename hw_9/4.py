@@ -1,7 +1,11 @@
 # Задание 1: Проверка времени суток
 
 class TimeUtils:
-    def is_morning(self, hour):
+    # def __init__(self, hour):
+    #         self.hour = hour
+    
+    @staticmethod     
+    def is_morning(hour):
         if hour in range(6,13):
             return True
         
